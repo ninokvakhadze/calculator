@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>calculator</title>
+  </head>
+  <body id="body">
+    <div class="head">
+      <h2 id="h2">calc</h2>
+      <p class="theme">THEME</p>
+      <div class="button">
+        <div class="numbers" id="numbers">
+          <p class="number">1</p>
+          <p class="number">2</p>
+          <p class="number">3</p>
+        </div>
+        <input type="range" min="1" max="3" value="1" id="rangeInput" />
+      </div>
+    </div>
+    <div class="container1"><input class="answer" id="result" disabled></input></div>
+    <div class="bottom">
+        <div class="blocks">
+        <button class="block"  onclick="calculator('7')">7</button>
+        <button class="block"  onclick="calculator('8')">8</button>
+        <button class="block"  onclick="calculator('9')">9</button>
+        <button class="block del" onclick="deleteLast('')">DEL</button>
+        <button class="block"  onclick="calculator('4')">4</button>
+        <button class="block"  onclick="calculator('5')">5</button>
+        <button class="block"  onclick="calculator('6')">6</button>
+        <button class="block"  onclick="calculator('+')">+</button>
+        <button class="block"  onclick="calculator('1')">1</button>
+        <button class="block"  onclick="calculator('2')">2</button>
+        <button class="block"  onclick="calculator('3')">3</button>
+        <button class="block"  onclick="calculator('-')">-</button>
+        <button class="block"  onclick="calculator('.')">.</button>
+        <button class="block"  onclick="calculator('0')">0</button>
+        <button class="block"  onclick="calculator('/')">/</button>
+        <button class="block"  onclick="calculator('*')">x</button>
+    </div>
+    <div class="reset-equal">
+        <button class="block2" value="" onclick="clearResult('')">RESET</button>
+        <button class="block2 equal" value="" onclick="calculate('calculate')">=</button>
+    </div>
+    </div>
+  </body>
+</html>

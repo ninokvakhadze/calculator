@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3a4663;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.head {
+  display: flex;
+  gap: 26px;
+  margin-top: 40px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+  color: white;
+  margin-right: 104px;
+}
+.theme {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+.button{
+  margin-top: -8px;
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 8px 0 8px;
+}
+.number {
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+  color: #fff;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 26px;
+  width: 71px;
+  background: #242d44;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  margin-top: 5px;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--thumb-background-color,#C85402);
+  border-radius: 50%;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--thumb-background-color,#D03F2F);
+}
+.container1 {
+  height: 88px;
+  width: 327px;
+  border-radius: 10px;
+  background-color: #181f33;
+  padding: 29px 22px 24px 0px;
+}
+.answer {
+  font-family: League Spartan;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  color: white;
+  width: 300px ;
+  background-color: #181f33;
+  border: none ;
+  height: 45px;
+}
+.bottom {
+  height: 420px;
+  width: 327px;
+  border-radius: 10px;
+  background: #242d44;
+  padding: 24px;
+}
+.blocks {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 13px;
+}
+.block {
+  height: 64px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #eae3dc;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 69px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+  color: #434a59;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+  border: none;
+}
+.del {
+  background-color: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: white;
+}
+.reset-equal {
+  display: flex;
+  gap: 13px;
+  margin-top: 13px;
+}
+.block2 {
+  height: 64px;
+  width: 133px;
+  border-radius: 5px;
+  background-color: #647198;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  border: none;
+}
+.equal {
+  background-color: #d03f2f;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+@media screen and (min-width: 1020px) {
+  .head {
+    margin-top: 112px;
+  }
+  h2 {
+    margin-right: 317px;
+  }
+  .container1 {
+    height: 128px;
+    width: 540px;
+    padding: 40px 32px 36px 0px;
+  }
+  .switch:hover {
+    cursor: pointer;
+    background-color: #f96b5b;
+  }
+  .answer {
+    width: 527px;
+    height: 68px;
+    font-size: 56px;
+    line-height: 52px;
+    letter-spacing: -0.9333333373069763px;
+  }
+  .bottom {
+    height: 480px;
+    width: 540px;
+    padding: 32px;
+    margin-bottom: 96px;
+  }
+  .blocks {
+    gap: 25px;
+  }
+  .block {
+    height: 64px;
+    width: 101px;
+    border-radius: 10px;
+    font-size: 40px;
+    letter-spacing: -0.6666666865348816px;
+    cursor: pointer;
+  }
+  .block:hover{
+    background-color: #FFFFFE;
+  }
+  .del {
+    font-size: 28px;
+    letter-spacing: -0.46666666865348816px;
+    line-height: 70px;
+  }
+  .del:hover{
+    background-color: #A2B2E1;
+  }
+  .reset-equal {
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .block2 {
+    height: 64px;
+    width: 227px;
+    border-radius: 10px;
+    font-size: 28px;
+    letter-spacing: -0.46666666865348816px;
+    line-height: 64px;
+    cursor: pointer;
+  }
+  .block2:hover{
+    background-color: #A2B2E1;
+  }
+  .equal:hover{
+   background-color: #F96B5B;
+  }
+}
